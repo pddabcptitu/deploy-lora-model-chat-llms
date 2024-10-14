@@ -8,6 +8,10 @@ a{
     color: black;
 }
 
+ul li{
+    list-style: none;
+}
+
 /* head  */
 .head {
     display: flex;
@@ -42,7 +46,6 @@ a{
 .head .feature ul{
     display: flex;
     padding: 5px;
-    list-style: none;
     gap: 60px;
 }
 
@@ -76,7 +79,9 @@ a{
 
 .main .bar{
     display: inline-block;
+    /* padding-bottom: 30px; */
     padding-top: 10px;
+    padding-right: 10px;
     padding-left: 10px;
     width: 50vh;
     background-color: rgb(249 249 249);
@@ -91,11 +96,33 @@ a{
 }
 
 .main .bar .new_chat{
-    margin-left: ;
+    /* margin-left: 135px; */
     width: 25px;
 }
 
+.main .bar .bar-opt{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 10px 10px 0px;
+}
+
+.main .bar .history{
+    padding-top: 20px;
+}
+
+.main .bar .title_his{
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.main .bar .title_his:hover{
+    background-color: #ccc;
+    cursor: pointer;
+}
+
+
 .main .body{
+    position: relative;
     padding-top: 10px;
     padding-left: 25vh;
     padding-right: 25vh;
@@ -105,6 +132,20 @@ a{
     height: calc(100vh - 72px);
     line-height: 1.5;
     
+}
+
+.main .body .custom-input{
+    position: absolute;
+    bottom: 20px;
+    right: 16vw;
+    width: 200px;
+    min-width: 50vw;
+    height: 40px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 999px;
+    text-align: center;
+    overflow: hidden;
 }
 
 
