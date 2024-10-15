@@ -176,6 +176,7 @@ ul li{
     border-radius: 999px;
     text-align: center;
     overflow: hidden;
+    resize: vertical;
 }
 
 .main .body .input .send{
