@@ -2,6 +2,7 @@
 *{
     margin: 0;
     padding: 0;
+    font-family: "Montserrat", sans-serif;
 }
 a{
     text-decoration: none;
@@ -46,7 +47,7 @@ ul li{
 .head .feature ul{
     display: flex;
     padding: 5px;
-    gap: 60px;
+    gap: 50px;
 }
 
 .head .feature ul li{
@@ -68,8 +69,13 @@ ul li{
 
 .head .action_log .logup{
     padding: 10px;
-    border: 1px solid #ccc;
+    border: 1px solid #cccccc;
     border-radius: 999px;
+    background-color: #f0421262;
+}
+
+.head .action_log .logup:hover{
+    cursor: pointer;
 }
 
 /* main */
@@ -122,7 +128,6 @@ ul li{
 
 
 .main .body{
-    position: relative;
     padding-top: 10px;
     padding-left: 25vh;
     padding-right: 25vh;
@@ -134,19 +139,55 @@ ul li{
     
 }
 
-.main .body .custom-input{
-    position: absolute;
-    bottom: 20px;
-    right: 16vw;
+.main .body .user{
+    display: flex;
+    justify-content: end;
+    margin-bottom: 30px;
+}
+
+.main .body .user .position{
+    max-width: 60%;
+}
+
+.main .body .user .bot{
+    margin-bottom: 30px;
+    width: 98%;
+}
+
+.main .body .input{
+    display: flex;
+    position: fixed;
+    bottom: 0px;
+    width: 60%;
+    height: 50px;
+    /* background-color: rgb(176, 21, 21); */
+    justify-content: center;
+
+}
+
+.main .body .input .custom-input{
+    display: inline-block;
     width: 200px;
     min-width: 50vw;
     height: 40px;
     padding-top: 10px;
     padding-bottom: 10px;
+    border: 2px solid #000;
     border-radius: 999px;
     text-align: center;
     overflow: hidden;
 }
 
+.main .body .input .send{
+    width: 38px;
+    height: 38px;
+    border: none;
+    margin-left: 5px;
+    background-color: white;
+    font-size: larger;
+}
 
+.main .body .input .send:hover{
+    cursor: pointer;
+}
 
